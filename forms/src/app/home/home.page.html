@@ -5,31 +5,28 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-
   <ion-card color="light">
     <ion-card-header>
       <ion-card-title>Cadastro teste</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <ion-item>
-        <ion-label position="floating">nome</ion-label>
-        <ion-input type="text" placeholder="Digite seu nome"></ion-input>
-      </ion-item>
+      <ion-list>
+        <ion-item>
+          <ion-input label="nome" type="text" placeholder="Digite seu nome"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label position="floating">Email</ion-label>
-        <ion-input type="email" placeholder="Usuario@email.com"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-input label="Email" type="email" placeholder="Usuario@email.com"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label position="floating">telefone</ion-label>
-        <ion-input type="tel" value="(22) 99999-9999" clear-input="true"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-input label="telefone" type="tel" value="(22) 99999-9999" clear-input="true"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label position="floating">Senha</ion-label>
-        <ion-input type="password"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-input label="Senha" type="password"></ion-input>
+        </ion-item>
+      </ion-list>
     </ion-card-content>
   </ion-card>
 
@@ -38,60 +35,53 @@
       <ion-card-title>Donfigurações teste</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <ion-item>
-        <ion-label position="floating">data de nascimento</ion-label>
-        <ion-input type="date"></ion-input>
-      </ion-item>
+      <ion-list>
+        <ion-item>
+          <ion-input label="data de nascimento" type="date"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label position="floating">Horário</ion-label>
-        <ion-input type="time"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-input label="Horário" type="time"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label>buscar</ion-label>
-        <ion-input type="search" debounce="400"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-input label="buscar" type="search" debounce="400"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label position="floating">site</ion-label>
-        <ion-input type="url" placeholder="https://meusite.com"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-input label="site" type="url" placeholder="https://meusite.com"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label>input readonly</ion-label>
-        <ion-input readonly="true" value="readonly"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-input label="input readonly" value="readonly" [readonly]="true"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label>Input desabilitado</ion-label>
-        <ion-input disabled="true" value="não pode mudar isso"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-input label="Input desabilitado" value="não pode mudar isso" [disabled]="true"></ion-input>
+        </ion-item>
+      </ion-list>
     </ion-card-content>
   </ion-card>
-
   <ion-card>
     <ion-card-header>
       <ion-card-title>Valores</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <ion-item>
-        <ion-label position="floating">idade</ion-label>
-        <ion-input type="number" min="0" max="100" step="1"></ion-input>
-      </ion-item>
+      <ion-list>
+        <ion-item>
+          <ion-input label="idade" type="number" min="0" max="100" step="1"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label position="floating">Mês</ion-label>
-        <ion-input type="month"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-input label="Mês" type="month"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label position="floating">Semana</ion-label>
-        <ion-input type="week"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-input label="Semana" type="week"></ion-input>
+        </ion-item>
+      </ion-list>
     </ion-card-content>
   </ion-card>
-
   <ion-card>
     <ion-card-header>
       <ion-card-title>Volume e brilho</ion-card-title>
@@ -128,7 +118,6 @@
       </ion-item>
     </ion-card-content>
   </ion-card>
-
   <ion-card>
     <ion-card-header>
       <ion-card-title>tipos dos labels</ion-card-title>
@@ -138,7 +127,6 @@
         <ion-label slot="start">Início</ion-label>
         <ion-range></ion-range>
       </ion-item>
-
       <ion-item>
         <ion-range></ion-range>
         <ion-label slot="end">Fim</ion-label>
