@@ -1,0 +1,174 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>forms de inputs e Ranges</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Cadastro teste</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">nome</ion-label>
+        <ion-input type="text" placeholder="Digite seu nome"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" placeholder="Usuario@email.com"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">telefone</ion-label>
+        <ion-input type="tel" value="(22) 99999-9999" clear-input="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Donfigurações teste</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">data de nascimento</ion-label>
+        <ion-input type="date"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Horário</ion-label>
+        <ion-input type="time"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>buscar</ion-label>
+        <ion-input type="search" debounce="400"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">site</ion-label>
+        <ion-input type="url" placeholder="https://meusite.com"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>input readonly</ion-label>
+        <ion-input readonly="true" value="readonly"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Input desabilitado</ion-label>
+        <ion-input disabled="true" value="não pode mudar isso"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Valores</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">idade</ion-label>
+        <ion-input type="number" min="0" max="100" step="1"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Mês</ion-label>
+        <ion-input type="month"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Semana</ion-label>
+        <ion-input type="week"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Volume e brilho</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label slot="start">volume</ion-label>
+        <ion-range min="0" max="100" pin="true" step="5" color="success">
+          <ion-icon name="volume-low" slot="start"></ion-icon>
+          <ion-icon name="volume-high" slot="end"></ion-icon>
+        </ion-range>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>brilho</ion-label>
+        <ion-range min="0" max="10" step="1" snaps="true" ticks="true" pin="true" color="warning"></ion-range>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Dual-Knob</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>faixa de preço</ion-label>
+        <ion-range dual-knobs="true" min="0" max="1000" step="50" pin="true" color="tertiary"></ion-range>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>idade</ion-label>
+        <ion-range dual-knobs="true" min="18" max="99" step="1" color="medium" pin="true"></ion-range>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>tipos dos labels</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label slot="start">Início</ion-label>
+        <ion-range></ion-range>
+      </ion-item>
+
+      <ion-item>
+        <ion-range></ion-range>
+        <ion-label slot="end">Fim</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label style="width: 120px;">Largura Fixa</ion-label>
+        <ion-range></ion-range>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Label Empilhado</ion-label>
+        <ion-range></ion-range>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Volum</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>som</ion-label>
+        <ion-range>
+          <ion-label slot="start">Mínimo</ion-label>
+          <ion-label slot="end">Máximo</ion-label>
+        </ion-range>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
